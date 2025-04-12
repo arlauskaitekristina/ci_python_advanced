@@ -27,16 +27,16 @@ jobs:
         pip install -r requirements.txt
     - name: Lint with flake8
       run: |
-        flake8 src/
+        flake8 app/
     - name: Lint with mypy
       run: |
-        mypy src/
+        mypy app/
     - name: Lint with black
       run: |
-        black --diff --check --line-length 79 src/
+        black --diff --check --line-length 79 app/
     - name: Lint with isort
       run: |
-        isort --check-only -- diff src/
+        isort --check-only -- diff app/
     - name: Lint with pytest
       run: |
         pytest tests
