@@ -2,7 +2,7 @@ from datetime import datetime, timedelta
 
 import pytest
 
-# from ci_python_advanced.app import create_app
+
 from app.models import Client, ClientParking, Parking
 from app.database import db as _db
 
