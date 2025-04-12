@@ -1,3 +1,3 @@
-import sys
+# import sys
 
-sys.path.append("../ci_python_advance")
+# sys.path.append("../ci_python_advance")
