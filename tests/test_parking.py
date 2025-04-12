@@ -3,7 +3,7 @@ import datetime
 import factory
 import pytest
 from sqlalchemy import func, select
-
+from app import create_app
 from app.models import Client, ClientParking, Parking
 
 from .factories import ClientFactory, ParkingFactory
