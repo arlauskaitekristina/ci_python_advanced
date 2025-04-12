@@ -4,7 +4,7 @@ import factory
 import pytest
 from sqlalchemy import func, select
 
-from ..app.models import Client, ClientParking, Parking
+from app.models import Client, ClientParking, Parking
 
 from .factories import ClientFactory, ParkingFactory
 
