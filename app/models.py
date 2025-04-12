@@ -31,7 +31,8 @@ class Client(db.Model):  # type: ignore
         return f"Клиент {self.name} {self.surname}"
 
     def to_json(self):
-        return {col.name: getattr(self, col.name) for col in self.__table__.columns}
+        return {col.name:
+                getattr(self, col.name) for col in self.__table__.columns}
 
 
 class Parking(db.Model):  # type: ignore
@@ -58,7 +59,8 @@ class Parking(db.Model):  # type: ignore
         return f"Парковка {self.address}"
 
     def to_json(self):
-        return {col.name: getattr(self, col.name) for col in self.__table__.column}
+        return {col.name:
+                getattr(self, col.name) for col in self.__table__.column}
 
 
 class ClientParking(db.Model):  # type: ignore
