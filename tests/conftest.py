@@ -2,9 +2,9 @@ from datetime import datetime, timedelta
 
 import pytest
 
-from ci_python_advanced.app import create_app
-from ci_python_advancedapp.models import Client, ClientParking, Parking
-from ci_python_advanced.app.database import db as _db
+from app import create_app
+from app.models import Client, ClientParking, Parking
+from app.database import db as _db
 
 
 @pytest.fixture
